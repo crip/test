@@ -7,7 +7,7 @@ chokidar.watch('content').on('all', () => reloadRoutes())
 const root = 'http://crip.github.io/test/';
 
 export default {
-  siteRoot: process.env.CI ? root : '', 
+  siteRoot: root, 
   getSiteData: () => ({
     title: '🦄',
     name: '~/🦄 $',
