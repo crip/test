@@ -4,10 +4,11 @@ import chokidar from 'chokidar'
 
 chokidar.watch('content').on('all', () => reloadRoutes())
 
-const root = 'http://crip.github.io/test/';
+const root = 'http://crip.github.io/test';
 
 export default {
-  siteRoot: root, 
+  siteRoot: root,
+  basePath: 'test',
   getSiteData: () => ({
     title: '🦄',
     name: '~/🦄 $',
